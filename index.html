@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pérfida - "Fine Lingerie"</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload banner
+  -->
+  <link rel="preload" href="./assets/images/perfiloading.jpg" as="image">
+
+</head>
+
+<body id="top" style="background-color:#F5F5F5">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header style="background-color:#F5F5F5">
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/perfidaInvisible.png" width="190" height="80" alt="Footcap logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logoperfida.jpeg" width="190" height="50" alt="Perfida logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="dresses.html" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Wishlist</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/oferta2-min.jpg')">
+        <div class="container">
+
+          <h2 class="h1 hero-title" style="color: #FFFFFF;">
+            PÉRFIDA 
+            <strong>Lencería Fina</strong>
+          </h2>
+
+          <p class="hero-text" style="color: #FFFFFF;">
+            Descubre la sensualidad y sofisticación que solo Perfida puede ofrecer. ¡Viste Perfida y déjate envolver por el encanto de la auténtica lencería fina!
+          </p>
+						
+          <button class="btn btn-primary">
+            <span>Shop Now</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection">
+        <div class="container">
+
+          <ul class="collection-list has-scrollbar">
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/bustier-min.jpg')">
+                <h3 class="h4 card-title" style="color: #FFFFFF;">Bustiers</h3>
+
+                <a style="color: #FFFFFF;" href="#" class="btn btn-secondary">
+                  <span>Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/brasier-min.jpg')">
+                <h3 class="h4 card-title" style="color: #FFFFFF;">Brasiers</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span style="color: #FFFFFF;">Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/calzon-min.jpg')">
+                <h3 class="h4 card-title" style="color: #FFFFFF;">Truzas</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span style="color: #FFFFFF;">Explore All</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+          <h2 class="h2 section-title">Bestsellers Products</h2>
+          <ul class="filter-list">
+            <li>
+              <button class="filter-btn">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Bustier</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Brasier</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Truzas</button>
+            </li>
+          </ul>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card"  tabindex="0">
+
+                <figure style="background-color: #eebbbb" class="card-banner">
+                  <img src="./assets/images/producto1-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Running Sneaker Shoes" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto2-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Leather Mens Slipper" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto3-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                 <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto4-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Air Jordan 7 Retro " class="image-contain">
+
+                  <div class="card-badge"> -25%</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto5-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Air Max 270 SE" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto6-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Adidas Sneakers Shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto7-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Basketball shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> 
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner" style="background-color: #eebbbb">
+                  <img src="./assets/images/producto8-min.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div>
+
+                 <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <ul class="cta-list">
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/oferta1-min.jpg')">
+                <p class="card-subtitle">Lencería Fina</p>
+
+                <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
+
+                <a href="#" class="btn btn-link">
+                  <span>Shop Now</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/banerperfida-min.jpg')">
+                <p class="card-subtitle">Truzas</p>
+
+                <h3 class="h2 card-title">Despierta la sensualidad con nuestra exquisita lencería fina</h3>
+
+                <a href="#" class="btn btn-link">
+                  <span>Shop Now</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL
+      -->
+
+      <section class="section special">
+        <div class="container" >
+
+          <div class="special-banner" style="background-image: url('./assets/images/especialfoto-min.jpg');color: #FFFFFF;background-color: #f9d6d5" >
+            <h2 class="h3 banner-title">Tendencias Nuevas</h2>
+
+            <a href="#" class="btn btn-link">
+              <span>Explore All</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Lenceria Especial</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/tendencia1-min.jpg" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Women</a>
+                    </div>
+
+                   <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">S/.180.85</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/tendencia2-min.jpg" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Men</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                  	</h3>
+
+                  	<data class="card-price" value="180.85">S/.180.85</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/tendencia3-min.jpg" width="312" height="350" loading="lazy"
+                      alt="pérfida lenceria fina" class="image-contain">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Women</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                 	 </h3>
+
+                  	<data class="card-price" value="180.85">S/.180.85</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/tendencia4-min.jpg" width="312" height="350" loading="lazy"
+                      alt="perfida lenceria fina " class="image-contain">
+
+                    <div class="card-badge"> -25%</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Women</a> 
+                    </div>
+
+                    <h3 class="h3 card-title">
+                    <a href="#">FALTA NOMBRE</a>
+                 	 </h3>
+
+                  	<data class="card-price" value="180.85">S/.180.85</data>
+
+                  </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Envio Gratuito</h3>
+
+                  <p class="card-text">
+                    All orders over <span>Monto</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Pago Rapido</h3>
+
+                  <p class="card-text">
+                    100% pago seguro
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Envio por Shalom</h3>
+
+                  <p class="card-text">
+                    Agencia de confianza
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="section insta-post">
+
+        <ul class="insta-post-list has-scrollbar">
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi6.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/p/C0ok4dbuljJ/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi7.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/p/CzmdYmLpbcq/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi8.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/reel/CzTqQMvukgV/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi9.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/reel/CxLH4w7uEpy/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi2.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/reel/C0ovNeHu6_P/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi4.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/reel/Cyemk-8piKs/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+          	<img src="./assets/images/instaperfi1.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">       
+            <a href="https://www.instagram.com/perfidape/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/instaperfi3.png" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="https://www.instagram.com/p/C0hCNsSOnR-/" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/perfidaInvisible.png" width="200" height="70" alt="Perfida logo">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/Perfidape?mibextid=9R9pXO" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/perfidape?igsh=c3o1bHZrdzFlZzk1&utm_source=qr" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://wa.me/960648844" class="social-link">
+               <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                 	Virtual Store
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text"> +51960648844</span>
+              </a>
+            </li>
+
+
+          </ul>
+         
+
+          <div class="footer-list" style="width:300px">
+
+            <p class="footer-list-title">Novedades</p>
+
+            <p class="newsletter-text">
+              Descubre un mundo de elegancia y atrevimiento. ¿Lista para darle un toque de seducción a tu estilo? 
+              Explora nuestro irresistible catálogo de lencería y encuentra la perfecta mezcla de coquetería y comodidad.
+              ¡Haz que cada día sea especial con nuestras irresistibles prendas!  
+            </p>
+
+              <button type="submit" class="btn btn-primary">Catalogo</button>
+     
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="https://wa.me/960648844" class="go-top-btn" data-go-top>
+    <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

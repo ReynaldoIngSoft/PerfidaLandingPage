@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre tu lado Sensual</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #LETTER{
+    margin-left: 180px;
+   
+}
+#LETTER{
+    margin-top: 150px;
+}
+#LETTER>div{
+  
+   margin-top: 100px;
+}
+
+#LETTER>div>a{
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    /* margin: auto; */
+    color: grey;
+    text-decoration: none;
+}
+#LETTER>div>a:hover{
+    text-decoration: underline;
+}
+        
+        #pro {
+            width: 85%;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        
+        #pro>div>div>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #pro>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            gap:80px;
+        }
+        #option>div>ul>li{
+            width:900px;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        .nav>ul {
+            width: 40%;
+            padding-top: 120px;
+            margin: auto;
+            display: flex;
+            padding-left: 400px
+        }
+        
+        .nav>ul>a>li {
+            margin-right: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+#menu {
+    display:grid;
+    width: 1.6%;
+    height: 20%;
+    margin-top: 0.7%;
+    align-content: space-around;
+    margin-left: 2%;
+    background-color: transparent;
+}
+#menu > div {
+    height: 1px;
+    background-color: black;
+    transition: 0.4s;
+}
+#one {
+    width: 90%;
+}
+#two {
+    width: 60%;
+}
+#three {
+    width: 70%;
+}
+#menu:hover div {
+    width: 90%;
+}
+#logo {
+    width: 16%;
+}
+#logo > a>img {
+    width: 100%;
+}
+#gap {
+    width: 40%;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+#cart {
+    display: flex;
+    width: 5%;
+    height: 35%;
+    background-color: transparent;
+    margin-right: 2%;
+}
+#search {
+    margin-top: 0.7%;
+}
+#loghelp {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top: 0.7%;
+}
+#cart >img {
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+}
+
+        .nav {
+            width: 100%;
+            background-color: transparent;
+            position: sticky;
+            top: 0px;
+            margin-bottom: 100px;
+        }
+        p{
+            font-size: 10px;
+        }
+        
+        @media screen and (min-width:321px) and (max-width:479px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:480px) and (max-width:720px) {
+            #product {
+                width: 95%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+        
+        @media screen and (min-width:721px) and (max-width:1080px) {
+            #product {
+                width: 96%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a id="menu" href="">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <div id="logo">
+         <a href="index.html" >  <img src="./assets/images/perfidaInvisible.png" alt="error">
+         </a>  </div>
+        <div id="gap"></div>
+        <a href="Search.html" id="search">SEARCH</a>
+        <div id="loghelp">
+            <a href="login.html" id="lg"></a>
+            <a href="https://www.zara.com/in/en/help" target="blank">HELP</a>
+        </div>
+        <a id="cart" href="">
+            <img src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" alt="">
+            <h5></h5>
+        </a>
+    </div>
+
+    <div id="pro">
+
+    </div>
+    <div id="LETTER">
+        <h2>JOIN OUR NEWSLETTER</h2>
+        <input type="text" name="" id="input" placeholder="ENTER YOUR EMAIL HERE">
+        <div>
+         <a href="https://www.instagram.com/zara/" target="_blank">
+             INSTAGRAM
+            </a>
+            <a href="https://www.facebook.com/Zara" target="_blank">
+             FACEBOOK
+            </a>
+            <a href="https://twitter.com/ZARA" target="_blank">TWITTER</a>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank">PINTEREST</a>
+            <a href="https://www.youtube.com/user/zara" target="_blank">YOUTUBE</a>
+            <a href="https://open.spotify.com/user/r6ivwuv0ebk346hhxo446pbfv" target="_blank">SPOTIFY</a>
+        </div>
+     
+       </div>
+    <section id="option">
+        <div>
+            <h3>HELP</h3>
+            <ul>
+                <li>SHOP AT ZARA.COM</li><br>
+                <li>PRODUCT</li><br>
+                <li>PAYMENT</li><br>
+                <li>SHIPPING</li><br>
+                <li>EXCHANGES AND RETURNS</li><br>
+                <li>SHOPS AND COMPANY </li><br>
+                <li>CLOTHES COLLECTION PROGRAMME</li><br>
+                <li>MY ACCOUNT </li>
+            </ul>
+
+        </div>
+        <div>
+            <h3> FOLLOW US</h3>
+            <ul>
+                <li>NEWSLETTER</li><br>
+                <li>INSTAGRAM</li><br>
+                <li>FACEBOOK</li><br>
+                <li>TWITTER</li><br>
+                <li>PINTEREST</li><br>
+                <li>YOUTUBE</li>
+            </ul>
+        </div>
+        <div>
+            <h3>COMPANY</h3>
+            <ul>
+                <li>ABOUT US</li><br>
+                <li>JOIN LIFE</li><br>
+                <li>OFFICES</li><br>
+                <li>STORES</li><br>
+                <li>WORK WITH US</li>
+            </ul>
+        </div>
+        <div>
+            <h3>POLICIES</h3>
+            <ul>
+                <li>PRIVACY POLICY</li><br>
+                <li>PURCHASE CONDITIONS</li><br>
+                <li>COOKIES SETTINGS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="second">
+        <p>INDIA</p>
+        <p>ENGLISH</p>
+        <p>@ALL RIGHTS RESERVED</p>
+    </section>
+    <div id="end">
+
+        <p>NAME AND ADDRESS OF THE MANUFACTURER: <br> INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.) <br> AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+
+
+    </div>
+</body>
+
+</html>
+<script>
+        let cartData=JSON.parse(localStorage.getItem("display"))||{}
+    womendata = [{
+            img: "./assets/images/producto9-min.jpg",
+            name: "DRESS WITH CUTWORK EMBROIDERY",
+            price: "2990",
+            productID: "short",
+            color: "white",
+        }, {
+            img: "./assets/images/producto2.jpg",
+
+            name: "PRINTED JUMPSUIT WITH FRILLS",
+            price: "2990",
+            productID: "jumpsuit",
+            color: "royal blue",
+        }, {
+            img: "./assets/images/producto9-min.jpg",
+
+            name: "OPEN KNIT DRESS",
+            price: "2590",
+            productID: "short",
+            color: "white",
+        }, {
+        	img: "./assets/images/producto7-min.jpg",
+            name: "OPEN KNIT DRESS",
+            price: "2590",
+            productID: "short",
+            color: "white",
+        }, {
+        	 img: "./assets/images/producto7-min.jpg",
+
+            name: "CHAIN SATIN CORSETRY-INSPIRED DRESS",
+
+            price: "3990",
+            productID: "Satin",
+            color: "white",
+        },
+
+        {
+        	 img: "./assets/images/producto7-min.jpg",
+
+            name: "KNIT LONG STRIPED TUNIC",
+            price: "5990",
+            productID: "maxi",
+            color: "black",
+        }, {
+        	 img: "./assets/images/producto7-min.jpg",
+            name: "FLORAL CROCHET KNIT DRESS - LIMITED EDITION",
+            price: "5990",
+            productID: "short",
+            color: "green",
+        }, {
+        	 img: "./assets/images/producto10-min.jpg",
+            name: "LINEN-BLEND KNIT MINI DRESS",
+            price: "2990",
+            productID: "mini",
+            color: "multicolored",
+        },
+
+        {
+        	 img: "./assets/images/producto10-min.jpg",
+
+            name: "SATIN MIDI DRESS",
+            price: "5990",
+            productID: "midi",
+            color: "sky blue",
+        },
+
+        {
+        	 img: "./assets/images/producto10-min.jpg",
+            name: "CORSETRY-INSPIRED MIDI DRESS WITH RHINESTONES",
+            price: "4990",
+            productID: "midi",
+            color: "white",
+        },
+
+        {
+        	 img: "./assets/images/producto10-min.jpg",
+            name: "SATIN SHIRT DRESS",
+            price: "2990",
+            productID: "satin",
+            color: "white",
+        }, {
+        	 img: "./assets/images/producto6-min.jpg",
+            name: "SATIN EFFECT WRAP DRESS",
+            price: "2990",
+            productID: "satin",
+            color: "blue",
+        }, {
+        	 img: "./assets/images/producto6-min.jpg",
+            name: "PRINTED TUNIC MIDI DRESS",
+            price: "4990",
+            productID: "midi",
+            color: "multicolored",
+        }, {
+        	 img: "./assets/images/producto9-min.jpg",
+            name: "DRESS",
+            price: "2990",
+            productID: "linen",
+            color: "light khaki",
+        }, {
+            img:  "./assets/images/compri1.jpg",
+
+            name: "SHORT SATIN DRESS",
+
+            price: "2990",
+            productID: "satin",
+            color: "neon pink",
+        }, {
+            img:  "./assets/images/compri2.jpg",
+            name: "MIDI EMBROIDERED DRESS",
+            price: "6990",
+            productID: "midi",
+            color: "black",
+        }, {
+            img:  "./assets/images/compri3.jpg",
+            name: "EMBROIDERED DRESS WITH BELT",
+            price: "4990",
+            productID: "short",
+            color: "blue marl",
+        }, {
+            img:  "./assets/images/compri4.jpg",
+
+            name: "EMBROIDERED BIB FRONT DRESS",
+            price: "5990",
+            productID: "short",
+            color: "maroon",
+        }, {
+            img:  "./assets/images/compri5.jpg",
+            name: "SATIN DRESS WITH CUT-OUT DETAIL",
+            price: "2890",
+            productID: "satin",
+            color: "light lime green",
+        }, {
+            img:  "./assets/images/compri6.jpg",
+            name: "CORSETRY-INSPIRED MIDI DRESS WITH RHINESTONES",
+            price: "4990",
+            productID: "midi",
+            color: "white",
+        }, {
+            img:  "./assets/images/compri7.jpg",
+            name: "SATIN SHIRT DRESS",
+            price: "4990",
+            productID: "satin",
+            color: "lime",
+        }, {
+            img:  "./assets/images/compri8.jpg",
+            name: "DRAPED SATIN BLAZER DRESS",
+            price: "7990",
+            productID: "satin",
+            color: "white",
+        }, {
+            img:  "./assets/images/compri1.jpg",
+            name: "LONG WRAP JUMPSUIT",
+
+            price: "5990",
+            productID: "jumpsuit",
+            color: "white",
+        }, {
+            img:  "./assets/images/compri7.jpg",
+            name: "ASYMMETRIC SATIN DRESS",
+            price: "6990",
+            productID: "satin",
+            color: "lime",
+        }, {
+            img:  "./assets/images/compri4.jpg",
+            name: "CUT-OUT DRESS",
+            price: "2990",
+            productID: "going out",
+            color: "black",
+        }, {
+            img:  "./assets/images/compri7.jpg",
+            name: "LINEN BLEND PLAYSUIT DRESS",
+            price: "2890",
+            productID: "going out",
+            color: "teal",
+        },
+    ]
+    let wpro = document.getElementById("pro");
+
+    var b=386
+for(let i=0 ;i<womendata.length ; i++){
+    let x=womendata[i]
+    if(x.quantity===undefined){
+        x.quantity=1
+    } if(x.category===undefined){
+        x.category=b
+      b++
+    }
+    if(x.cartePrice===undefined){
+           x.cartePrice=x.price 
+    }
+    
+}
+    function displayw(womendata) {
+        wpro.innerHTML = "";
+        womendata.forEach(function(elem) {
+            let div = document.createElement("div");
+            let box = document.createElement("div");
+            let box1 = document.createElement("div");
+            let phot = document.createElement("img");
+            phot.setAttribute("src", elem.img);
+            phot.addEventListener("click",function(){
+             localSet(elem)
+        })
+            box.append(phot);
+            let inname = document.createElement("p");
+            inname.innerText = elem.name;
+            inname.addEventListener("click",function(){
+             localSet(elem)
+        })
+            let price = document.createElement("p")
+            price.innerText=`₹ ${elem.price}.00`;
+            box1.append(inname, price)
+            box.append(phot);
+            div.append(box, box1)
+            document.querySelector("#pro").append(div);
+
+        });
+    }
+    
+    function localSet(el){
+  // console.log("kunal");
+ 
+  localStorage.setItem("display",JSON.stringify(el))
+  window.location.href="linkimage.html"
+}
+    displayw(womendata)
+
+    let logdata=JSON.parse(localStorage.getItem("Userdata"))
+
+logdata.forEach(function(elem){
+	document.querySelector("#lg").innerText=elem.name;
+})
+</script>
+
+<script src="navbar.js"></script>
+
+
+
