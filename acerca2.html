@@ -11,9 +11,101 @@
         <link
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
           rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./assets/css/styleacerca.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     </head>
     <body>
+        <header class="header" data-header style="background-color:#F5F5F5">
+            <div class="container">
+        
+              <div class="overlay" data-overlay></div>
+        
+              <a href="#" class="logo">
+                <img src="./assets/images/perfidaInvisible.png" width="190" height="80" alt="Footcap logo">
+              </a>
+        
+              <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+        
+              <nav class="navbar" data-navbar>
+        
+                <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+        
+                <a href="#" class="logo">
+                  <img src="./assets/images/logoperfida.jpeg" width="190" height="50" alt="Perfida logo">
+                </a>
+        
+                <ul class="navbar-list">
+        
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                  </li>
+        
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">About</a>
+                  </li>
+        
+                  <li class="navbar-item">
+                    <a href="dresses.html" class="navbar-link">Products</a>
+                  </li>
+        
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Shop</a>
+                  </li>
+        
+                  <li class="navbar-item">
+                    <a href="#" class="navbar-link">Contact</a>
+                  </li>
+        
+                </ul>
+        
+                <ul class="nav-action-list">
+        
+                  <li>
+                    <button class="nav-action-btn">
+                      <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        
+                      <span class="nav-action-text">Search</span>
+                    </button>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="nav-action-btn">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        
+                      <span class="nav-action-text">Login / Register</span>
+                    </a>
+                  </li>
+        
+                  <li>
+                    <button class="nav-action-btn">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        
+                      <span class="nav-action-text">Wishlist</span>
+        
+                      <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+                    </button>
+                  </li>
+        
+                  <li>
+                    <button class="nav-action-btn">
+                      <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+        
+                      <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+        
+                      <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+                    </button>
+                  </li>
+        
+                </ul>
+        
+              </nav>
+        
+            </div>
+          </header>
+
         <div class="bienvenida" style="background-color:#F5F5F5">
             <h1 class="h1 hero-title" style="align-items: center; text-align: center;font-size: 24px;">ACERCA DE NOSOTROS</h1>
             <section class="section hero" style="background-image: url('./assets//images/visionperfida.jpg')">
@@ -21,22 +113,22 @@
         
                   <h2 class="h1 hero-title" style="color: black;">
                  
-                    <strong>Misión</strong>
+                    Misión
                   </h2>
         
-                  <p class="parrafovision" style="color: black;">
-                    <strong> Perfida Lencería Fina, nos dedicamos a diseñar y crear prendas que potencien la belleza de la mujer peruana y colombiana. Nuestra misión es ofrecer productos cómodos y sensuales que reflejen calidad y estilo, proporcionando a nuestras consumidoras una experiencia única y empoderadora.</strong>
+                  <p class="parrafovision">
+                     Perfida Lencería Fina, nos dedicamos a diseñar y crear prendas que potencien la belleza de la mujer peruana y colombiana. Nuestra misión es ofrecer productos cómodos y sensuales que reflejen calidad y estilo, proporcionando a nuestras consumidoras una experiencia única y empoderadora.
                   </p>
                 </div>
                 <div class="container" style="background-color:#f9d6d5 ;opacity: 0.7;">
         
                     <h2 class="h1 hero-title" style="color: black;">
                      
-                      <strong>Visión</strong>
+                      Visión
                     </h2>
           
-                    <p class="parrafovision" style="color: black;">
-                        <strong> la elección preferida de las mujeres que valoran la calidad y la exclusividad en lencería. Aspiramos a ser reconocidas por nuestro compromiso con la innovación y la elegancia, expandiendo nuestro impacto en el mercado peruano y colombiano, y más allá.</strong>
+                    <p class="parrafovision">
+                       la elección preferida de las mujeres que valoran la calidad y la exclusividad en lencería. Aspiramos a ser reconocidas por nuestro compromiso con la innovación y la elegancia, expandiendo nuestro impacto en el mercado peruano y colombiano, y más allá.
                     </p>
                   </div>
               </section>
@@ -50,12 +142,12 @@
                 <img class="foto" src="./assets/images/vaneperfida.jpg">
             </div>
             <div class="contenido">
-                <h2>EMPRENDEDORAS PERUANAS</h2>
+                <h2 style="margin: 20px;">EMPRENDEDORAS PERUANAS</h2>
                 <p>
                     Bienvenidos a Perfida Lencería Fina, la expresión más íntima de la elegancia y sensualidad, fundada por gemelas peruanas con una pasión compartida por la moda y el diseño. Nuestra marca fusiona la creatividad de una diseñadora de modas, actualmente radicada en Colombia, con la visión emprendedora de ofrecer productos de calidad excepcional tanto en el mercado peruano como en el colombiano. 
                 </p>
 
-                <h2>NUESTRA HISTORIA</h2>
+                <h2 style="margin:20px">NUESTRA HISTORIA</h2>
                 <p>
                     Perfida nace del deseo de dos emprendedoras peruanas de crear una marca de lencería única y versátil. Con la inspiración de la diversidad y la elegancia de la mujer peruana, y con la diseñadora de modas perfeccionando cada detalle desde Colombia, Perfida se erige como un testimonio de la excelencia en el diseño y la confección de lencería fina.
                 </p>
