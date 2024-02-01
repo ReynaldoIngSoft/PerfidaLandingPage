@@ -21,7 +21,8 @@ for (let i = 0; i < navElems.length; i++) {
 }
 
 function scrollToFooter() {
-  const footer = document.getElementById('social-footer');
+  
+  const footer = document.getElementById("social-footer");
   footer.scrollIntoView({ behavior: 'smooth' });
 }
 
