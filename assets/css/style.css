@@ -37,7 +37,9 @@
   /**
    * typography
    */
-  
+
+
+
   --ff-roboto: 'Roboto', sans-serif;
   --ff-josefin-sans: 'Josefin Sans', sans-serif;
 
@@ -143,6 +145,25 @@ body {
 /*-----------------------------------*\
  * #REUSED STYLE
 \*-----------------------------------*/
+.boton-flotante {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius:40px;
+  overflow: hidden;
+
+}
+.boton-flotante ion-icon{
+
+  display: inline-block;
+}
 
 .container { padding-inline: 15px; }
 
