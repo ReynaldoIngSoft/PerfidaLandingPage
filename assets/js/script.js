@@ -32,13 +32,16 @@ function scrollToFooter() {
 
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
+const goTopBtn2 = document.querySelector("[data-go-top2]");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 80) {
     header.classList.add("active");
     goTopBtn.classList.add("active");
+    goTopBtn2.classList.add("active");
   } else {
     header.classList.remove("active");
     goTopBtn.classList.remove("active");
+    goTopBtn2.classList.remove("active");
   }
 });

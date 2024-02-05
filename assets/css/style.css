@@ -145,25 +145,8 @@ body {
 /*-----------------------------------*\
  * #REUSED STYLE
 \*-----------------------------------*/
-.boton-flotante {
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 10px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius:40px;
-  overflow: hidden;
 
-}
-.boton-flotante ion-icon{
 
-  display: inline-block;
-}
 
 .container { padding-inline: 15px; }
 
@@ -215,6 +198,61 @@ body {
   --border-color: var(--black);
   --color: var(--black);
 }
+
+.boton-colombia{
+  position: fixed;
+  bottom: 105px;
+  right: 35px;
+  width: 67px;
+  height: 67px;
+  background: black;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-1);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.boton-colombia::after {
+  content: "Colombiana"; /* Reemplaza "Palabra" con la palabra que deseas mostrar */
+  position: absolute;
+  bottom: -30px; /* Ajusta la posición vertical según tu preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  background: yellow;
+  color: var(--black);
+  font-size: 14px; /* Ajusta el tamaño del texto según tu preferencia */
+  padding: 6px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.boton-colombia:hover::after {
+  opacity: 1;
+}
+
+.boton-colombia.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.boton-colombia:is(:hover, :focus) { background: green; }
+
+
+.boton-colombia img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
 
 .btn-secondary:is(:hover, :focus) { --background: hsla(0, 0%, 0%, 0.1); }
 
@@ -925,7 +963,6 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
 
 
 
-
 /*-----------------------------------*\
  * #GO TOP
 \*-----------------------------------*/
@@ -946,6 +983,8 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
   z-index: 2;
 }
 
+
+
 .go-top-btn.active {
   opacity: 1;
   visibility: visible;
@@ -953,6 +992,25 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
 
 .go-top-btn:is(:hover, :focus) { background: black; }
 
+
+.go-top-btn::after {
+  content: "Peuanita Bonita "; /* Reemplaza "Palabra" con la palabra que deseas mostrar */
+  position: absolute;
+  bottom: -30px; /* Ajusta la posición vertical según tu preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  color: var(--white);
+  font-size: 14px; /* Ajusta el tamaño del texto según tu preferencia */
+  padding: 6px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.go-top-btn:hover::after {
+  opacity: 1;
+}
 
 
 
