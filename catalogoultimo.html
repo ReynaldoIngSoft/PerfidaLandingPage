@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Catalogo Lenceria</title>
+        <link rel="stylesheet" href="catalogo.css">
+    </head>
+    <body>
+        <script>
+            let products = null;
+            fetch('products.json').then(response => response.json()).then(data => {
+                products = data;
+                console.log(products);
+            })
+        </script>
+    </body>
+
+</html>

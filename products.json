@@ -1,0 +1,27 @@
+[
+    {
+        "img": "./assets/images/producto9-min.jpg",
+        "name": "DRESS WITH CUTWORK EMBROIDERY",
+        "price": "2990",
+        "productID": "short",
+        "descripcion": "white",
+        "tipo":"bustier"
+    },
+    {
+        "img": "./assets/images/producto9-min.jpg",
+        "name": "DRESS WITH CUTWORK EMBROIDERY",
+        "price": "2990",
+        "productID": "short",
+        "descripcion": "white",
+        "tipo":"bustier"
+    },
+    {
+        "img": "./assets/images/producto9-min.jpg",
+        "name": "DRESS WITH CUTWORK EMBROIDERY",
+        "price": "2990",
+        "productID": "short",
+        "descripcion": "white",
+        "tipo":"bustier"
+    }
+ 
+]
