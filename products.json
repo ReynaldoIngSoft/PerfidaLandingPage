@@ -1,27 +1,39 @@
-[
+[   
     {
-        "img": "./assets/images/producto9-min.jpg",
-        "name": "DRESS WITH CUTWORK EMBROIDERY",
-        "price": "2990",
-        "productID": "short",
-        "descripcion": "white",
-        "tipo":"bustier"
+      "id":1,
+      "name": "LENCERIA BONITA 2",
+      "price": 180,
+      "image": "./assets/images/producto9-min.jpg",
+      "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
     },
+
     {
-        "img": "./assets/images/producto9-min.jpg",
-        "name": "DRESS WITH CUTWORK EMBROIDERY",
-        "price": "2990",
-        "productID": "short",
-        "descripcion": "white",
-        "tipo":"bustier"
-    },
-    {
-        "img": "./assets/images/producto9-min.jpg",
-        "name": "DRESS WITH CUTWORK EMBROIDERY",
-        "price": "2990",
-        "productID": "short",
-        "descripcion": "white",
-        "tipo":"bustier"
-    }
+        "id":1,
+        "name": "LENCERIA BONITA 2",
+        "price": 180,
+        "image": "./assets/images/producto9-min.jpg",
+        "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
+      },
+      {
+        "id":1,
+        "name": "LENCERIA BONITA 2",
+        "price": 180,
+        "image": "./assets/images/producto9-min.jpg",
+        "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
+      },
+      {
+        "id":1,
+        "name": "LENCERIA BONITA 2",
+        "price": 180,
+        "image": "./assets/images/producto9-min.jpg",
+        "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
+      },
+      {
+        "id":1,
+        "name": "LENCERIA BONITA 2",
+        "price": 180,
+        "image":"./assets/images/compri4.jpg",
+        "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
+      }   
  
 ]

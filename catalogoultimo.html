@@ -2,17 +2,46 @@
 <html lang="en">
     <head>
         <meta charset ="UTF-8">
+       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Catalogo Lenceria</title>
-        <link rel="stylesheet" href="catalogo.css">
+        <link rel="stylesheet" href="./assets/css/catalogo.css">
     </head>
-    <body>
+    <body> 
+            <div class="listProduct">
+                
+            </div>      
+
         <script>
             let products = null;
             fetch('products.json').then(response => response.json()).then(data => {
                 products = data;
                 console.log(products);
+                addDataToHTML();
+
             })
+
+            let listProduct = document.querySelector('.listProduct');
+            function addDataToHTML(){
+                products.forEach(product => {
+                   let newProduct = document.createElement('a');
+                   newProduct.href = '/detail.html?id='+ product.id;
+                   newProduct.classList.add('item');
+                   newProduct.innerHTML =  `
+                    <img src="${product.image}">
+                    <div>
+                        <p>${product.name}</p>
+                        <p>${product.price}</p>   
+                    </div>  
+                   `;
+
+
+                   // add this element in listProduct class
+                   listProduct.appendChild(newProduct);
+                });
+            }
         </script>
     </body>
 

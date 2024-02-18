@@ -13,11 +13,12 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        #LETTER{
+ * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+ #LETTER{
     margin-left: 180px;
    
 }
@@ -535,9 +536,10 @@ a {
             color: "teal",
         },
     ]
+    
     let wpro = document.getElementById("pro");
+    var b=386;
 
-    var b=386
 for(let i=0 ;i<womendata.length ; i++){
     let x=womendata[i]
     if(x.quantity===undefined){
@@ -551,6 +553,7 @@ for(let i=0 ;i<womendata.length ; i++){
     }
     
 }
+
     function displayw(womendata) {
         wpro.innerHTML = "";
         womendata.forEach(function(elem) {
