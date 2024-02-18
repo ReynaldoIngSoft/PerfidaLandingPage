@@ -199,59 +199,6 @@ body {
   --color: var(--black);
 }
 
-.boton-colombia{
-  position: fixed;
-  bottom: 105px;
-  right: 30px;
-  width: 67px;
-  background: black;
-  background-color: black;
-  border-radius: 50%;
-  transition: var(--transition-1);
-  z-index: 3;
-  visibility: hidden;
-  opacity: 0;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 50%;
-}
-
-.boton-colombia::after {
-  content: "Colombiana"; /* Reemplaza "Palabra" con la palabra que deseas mostrar */
-  position: absolute;
-  bottom: -30px; /* Ajusta la posición vertical según tu preferencia */
-  left: 50%;
-  transform: translateX(-50%);
-  background: yellow;
-  color: var(--black);
-  font-size: 14px; /* Ajusta el tamaño del texto según tu preferencia */
-  padding: 6px 10px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.boton-colombia:hover::after {
-  opacity: 1;
-}
-
-.boton-colombia.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.boton-colombia:is(:hover, :focus) { background: yellow; }
-
-
-.boton-colombia img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-
-
 .btn-secondary:is(:hover, :focus) { --background: hsla(0, 0%, 0%, 0.1); }
 
 .has-scrollbar {
