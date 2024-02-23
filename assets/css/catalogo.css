@@ -12,8 +12,7 @@ a{
     color: unset;
     text-decoration:none ;
 }
-
-.listProduct{
+/*    #pro {
             width: 85%;
             margin: 200px auto;
             display: grid;
@@ -21,14 +20,35 @@ a{
             grid-template-rows: auto;
             gap: 20px;
         }
+        
+        #pro>div>div>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #pro>div>div:last-child {
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+        }*/
+.listProduct{
+            width: 85%;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            
+        }
 
- p{
+ .listProduct p{
      font-size: 10px;
  }
 
 .listProduct img{
     width: 100%;
-    height: 100%;
+    height: auto;
+   
 }
 
 .listProduct div{

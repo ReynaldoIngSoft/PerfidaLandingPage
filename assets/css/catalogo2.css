@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    width:80%;
+    max-width: 90vw;
+    margin:auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.title{
+    font-size: xx-large;
+    padding: 20px 0;
+}
+
+.listProduct .item img{
+    width: 90%;
+    
+}
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.listProduct  .item{
+    background-color: transparent;
+    
+    
+}
+.listProduct  .item h2{
+    font-size: small;
+    font-weight: 500;
+}
+.listProduct .item .price{
+    letter-spacing: 4px;
+    font-size: small;
+}
+
+@media screen and (max-width:992px){
+    .listProduct{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .listProduct{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+

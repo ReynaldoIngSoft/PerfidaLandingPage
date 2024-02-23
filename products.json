@@ -3,7 +3,7 @@
       "id":1,
       "name": "LENCERIA BONITA 2",
       "price": 180,
-      "image": "./assets/images/sonia1.jpg",
+      "image": "./assets/images/oferta1.jpg",
       "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
     },
 
@@ -11,28 +11,28 @@
         "id":1,
         "name": "LENCERIA BONITA 2",
         "price": 180,
-        "image": "./assets/images/sonia1.jpg",
+        "image": "./assets/images/compri3.jpg",
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       },
       {
         "id":1,
         "name": "LENCERIA BONITA 2",
         "price": 180,
-        "image": "./assets/images/sonia1.jpg",
+        "image": "./assets/images/compri3.jpg",
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       },
       {
         "id":1,
         "name": "LENCERIA BONITA 2",
         "price": 180,
-        "image": "./assets/images/sonia1.jpg",
+        "image": "./assets/images/compri3.jpg",
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       },
       {
         "id":1,
         "name": "LENCERIA BONITA 2",
         "price": 180,
-        "image":"./assets/images/sonia1.jpg",
+        "image": "./assets/images/compri3.jpg",
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       }   
  

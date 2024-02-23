@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="en">
+  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CatalogoNuevo2</title>
+        <link rel="stylesheet" href="./assets/css/catalogo2.css" type="text/css">
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="title"> PRODUCT LIST</div>
+            <div class="listProduct"></div>
+        </div>
+            <script>
+                let products = null;
+                fetch('products.json')
+                .then(response=> response.json())
+                .then(data =>{
+                    products = data;
+                    console.log(products);
+                    addDataToHTML();
+                })
+                //add data product to HTML
+                let listProduct = document.querySelector('.listProduct');
+                function addDataToHTML(){
+                    products.forEach(product => {
+                        let newProduct = document.createElement('a');
+                        newProduct.href='/detail.html?id=' + product.id;
+                        newProduct.classList.add('item');
+                        newProduct.innerHTML =`
+                            <img src="${product.image}">
+                            <h2>${product.name}</h2>
+                            <div class="price">${product.price}</div>
+                        `;
+
+                        //add this element in list product class
+                        listProduct.appendChild(newProduct);
+                    });
+                }
+            </script>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>
+
