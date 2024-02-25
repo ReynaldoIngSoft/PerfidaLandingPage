@@ -28,14 +28,13 @@
                 function addDataToHTML(){
                     products.forEach(product => {
                         let newProduct = document.createElement('a');
-                        newProduct.href='/detail.html?id=' + product.id;
+                        newProduct.href='/detalleProducto.html?id=' + product.id;
                         newProduct.classList.add('item');
                         newProduct.innerHTML =`
                             <img src="${product.image}">
                             <h2>${product.name}</h2>
                             <div class="price">${product.price}</div>
                         `;
-
                         //add this element in list product class
                         listProduct.appendChild(newProduct);
                     });

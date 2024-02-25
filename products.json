@@ -1,4 +1,4 @@
-[   
+  [
     {
       "id":1,
       "name": "LENCERIA BONITA 2",
@@ -8,14 +8,14 @@
     },
 
     {
-        "id":1,
+        "id":2,
         "name": "LENCERIA BONITA 2",
         "price": 180,
         "image": "./assets/images/compri3.jpg",
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       },
       {
-        "id":1,
+        "id":3,
         "name": "LENCERIA BONITA 2",
         "price": 180,
         "image": "./assets/images/compri3.jpg",
@@ -36,4 +36,4 @@
         "description":"lenceria bonitañl,sldmlñasmñldmaslñ sa kdln asklndklas ,la kldaksl ,mas kldmask dm asmld asklm dklmaskld kla kld askld dklas kld akl "
       }   
  
-]
+    ]
