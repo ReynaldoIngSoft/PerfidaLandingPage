@@ -20,10 +20,14 @@ for (let i = 0; i < navElems.length; i++) {
   });
 }
 
-function scrollToFooter() {
+function scrollToFooter(sectionId) {
   
-  const footer = document.getElementById("social-footer");
-  footer.scrollIntoView({ behavior: 'smooth' });
+  const footer = document.getElementById(sectionId);
+
+  if (footer) {
+    footer.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
 
 /**

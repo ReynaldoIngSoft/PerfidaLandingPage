@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+.master{
+    width:80%;
+    max-width: 90vw;
+    margin:auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.principal{
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    text-align: left;
+    border: 1px solid rgb(11, 11, 11);
+}
+
+.principal .name{
+    text-align: center;
+    margin:10px 10px 10px 10px;
+    border: 1px solid rgb(11, 11, 11);
+    padding: 10px 10px 10px 10px;
+}
+
+.principal .miniGallery{
+    border: 1px solid rgb(11, 11, 11);
+}
+.principal .info{
+    border: 1px solid rgb(11, 11, 11);
+    width: 100%;
+}
+
+.photogalery{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.miniGallery{
+    width: 18%;
+}
+
+.photogalery .photo{
+    width: 100%;
+}
+.principal .description{
+    padding:10px 10px 10px 10px;
+    border-top: 1px solid rgb(11, 11, 11);
+    border-bottom: 1px solid rgb(11, 11, 11);
+    text-align: center;
+}
+
+.principal .price{
+    text-align: center;
+    margin:10px 10px 10px 10px;
+    border: 1px solid rgb(11, 11, 11);
+    padding: 10px 10px 10px 10px;
+}
+
+.principal .buttons{
+    border: 1px solid rgb(11, 11, 11);
+}
+
+.principal .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.principal .photo{
+    position:relative;
+    border: 1px solid rgb(11, 11, 11);
+}
+
+@media screen and (max-width: 1200px) {
+    .principal {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .principal {
+      grid-template-columns: 1fr;
+    }
+  
+    .principal .miniGallery {
+      display: none;
+    }
+  
+    .principal .photo {
+      grid-column: span 2;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .principal .name,
+    .principal .description,
+    .principal .price {
+      font-size: 1.2rem;
+    }
+  }

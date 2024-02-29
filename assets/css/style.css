@@ -90,6 +90,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li { list-style: none; }
 
 a { text-decoration: none; }
@@ -367,16 +371,13 @@ body {
 .btn-link:is(:hover, :focus) { border-color: transparent; }
 
 
-
-
-
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
 
 .header {
   background: var(--white);
-  position: fixed;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -390,7 +391,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 20px;
+  padding-block: 15px;
 }
 
 .nav-open-btn {
@@ -916,7 +917,7 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: black;
+  background: #25D366;
   color: var(--white);
   font-size: 20px;
   padding: 10px;
@@ -935,16 +936,16 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
   visibility: visible;
 }
 
-.go-top-btn:is(:hover, :focus) { background: red; }
+.go-top-btn:is(:hover, :focus) { background: green; }
 
 
 .go-top-btn::after {
-  content: "Peuanita Bonita "; /* Reemplaza "Palabra" con la palabra que deseas mostrar */
+  content: "perfida lenceria"; /* Reemplaza "Palabra" con la palabra que deseas mostrar */
   position: absolute;
   bottom: -30px; /* Ajusta la posición vertical según tu preferencia */
   left: 50%;
   transform: translateX(-50%);
-  background: red;
+  background: green;
   color: var(--white);
   font-size: 14px; /* Ajusta el tamaño del texto según tu preferencia */
   padding: 6px 10px;
