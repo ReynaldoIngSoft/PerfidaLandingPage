@@ -58,10 +58,12 @@
                 window.location.href="/";
             }
             // the product exist
+           
             detail.querySelector('.image img').src  = thisProduct.image;
             detail.querySelector('.name').innerText = thisProduct.name;
             detail.querySelector('.price').innerText = 'S/.'+ thisProduct.price;
             detail.querySelector('.description').innerText = thisProduct.description;
+          
         
             // add datas products detail
             let listProduct = document.querySelector('.listProduct');
@@ -70,7 +72,7 @@
             (products.filter(value => value.id != productId))
             .forEach(product => {
                 let newProduct = document.createElement('a');
-                newProduct.href ='/detalleProducto?id='+ product.id;
+                newProduct.href ='/detalleProducto.html?id='+ product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = `
                     <img src="${product.image}">
